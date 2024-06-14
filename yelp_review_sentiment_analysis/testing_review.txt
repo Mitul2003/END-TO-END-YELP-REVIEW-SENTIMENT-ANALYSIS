@@ -1,0 +1,26 @@
+The model you have trained is designed for sentiment analysis based on reviews from the Yelp dataset.
+Yelp reviews typically cover a wide range of local businesses and services, including:
+
+Restaurants and cafes
+Bars and nightlife
+Shops and retail stores
+Health and beauty services (e.g., salons, spas)
+Home services (e.g., plumbers, electricians)
+Automotive services
+Entertainment and recreation (e.g., theaters, museums)
+Fitness and gyms
+Travel and hotels
+
+
+Positive Reviews
+
+"I absolutely love this place! The food is amazing and the staff is super friendly. I will definitely come back."
+"This was the best experience I've ever had. The service was impeccable and the ambiance was perfect. Highly recommended!"
+
+Neutral Reviews
+"The restaurant was okay. The food was neither great nor terrible. Just an average experience."
+"I had a decent time. Nothing stood out, but nothing was particularly bad either. It's a place to consider if you're nearby."
+
+Negative Reviews
+"This was a terrible experience. The food was cold and tasteless, and the service was extremely slow. I won't be coming back."
+"I didn't enjoy my time here. The atmosphere was unpleasant and the staff was rude. Definitely not worth the visit."

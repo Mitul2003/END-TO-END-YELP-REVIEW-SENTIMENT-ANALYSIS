@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            padding-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+        }
+        .form-control, .btn {
+            margin-top: 10px;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Sentiment Analysis</h1>
+        <form id="reviewForm" action="/predict" method="post" onsubmit="return validateForm()">
+            <div class="form-group">
+                <textarea class="form-control" name="review_text" id="review_text" rows="5" placeholder="Enter your Busines review"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Analyze</button>
+        </form>
+        <div class="footer">
+            <p>&copy; Mitul Dudhat 2024</p>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            var reviewText = document.getElementById('review_text').value.trim();
+            if (reviewText === '') {
+                alert('Please enter a review before submitting.');
+                return false; // Prevent form submission
+            }
+            return true; // Allow form submission
+        }
+    </script>
+</body>
+</html>

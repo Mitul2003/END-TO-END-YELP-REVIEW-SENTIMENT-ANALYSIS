@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+tensorflow
+pandas
+scikit-learn
+jinja2

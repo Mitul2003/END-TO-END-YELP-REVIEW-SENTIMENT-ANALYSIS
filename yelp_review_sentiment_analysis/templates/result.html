@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis Result</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .btn {
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #aaa;
+        }
+        .negative {
+            border: 2px solid red; /* Red border for negative sentiment */
+        }
+        .neutral {
+            border: 2px solid blue; /* Blue border for neutral sentiment */
+        }
+        .positive {
+            border: 2px solid green; /* Green border for positive sentiment */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Sentiment Analysis Result</h1>
+        <div class="result {{ sentiment }}">
+            <p><b>Review:</b> {{ review_text }}</p>
+            <p><b>Predicted Sentiment:</b> {{ sentiment }}</p>
+        </div>
+        <a href="/" class="btn btn-primary btn-block">Back to Home</a>
+        <div class="footer">
+            <p>&copy; 2024 Sentiment Analysis</p>
+        </div>
+    </div>
+</body>
+</html>
